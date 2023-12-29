@@ -1,7 +1,10 @@
+import { ITEMS_DATA } from "./data/items";
+import ItemListPosition from "./components/ItemListPosition";
+
 function App() {
     return (
         <div>
-            <h1>Hello Stanley!!</h1>
+            {ITEMS_DATA.map( (item) => <ItemListPosition {...item} /> ) }
         </div>
     );
 }
