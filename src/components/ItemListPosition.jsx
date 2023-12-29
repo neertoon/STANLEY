@@ -1,3 +1,5 @@
+import './ItemsListPosition.css';
+
 function ItemListPosition({index, title, description}) {
     return (
         <div className="item-list-position">
