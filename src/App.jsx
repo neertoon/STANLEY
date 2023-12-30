@@ -4,8 +4,11 @@ import ItemList from "./components/Items/ItemList";
 
 
 function App() {
-    const [ selectedContent, handleSelectedConted ] = useState('MainPage');
+    const [ selectedContent, handleSelectedContent ] = useState('MainPage');
 
+    function changeContent(componentName) {
+        handleSelectedContent(componentName)
+    }
     let mainContent = '';
     if (selectedContent == 'MainPage') {
         mainContent = <MainPage />
@@ -16,7 +19,7 @@ function App() {
     return (
         <div>
             {mainContent}
-            <BottomMenu />
+            <BottomMenu onClick={() => changeContent('ItemList')}/>
         </div>
     );
 }

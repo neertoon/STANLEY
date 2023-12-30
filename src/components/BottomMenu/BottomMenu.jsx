@@ -1,7 +1,7 @@
 import './BottomMenu.css';
-function BottomMenu() {
+function BottomMenu({ onClick }) {
     return (
-        <div className="bottom-menu">
+        <div className="bottom-menu" onClick={onClick}>
             <p>Tutaj będzie menu</p>
         </div>
     );
