@@ -1,11 +1,10 @@
-import { ITEMS_DATA } from "./data/items";
-import ItemListPosition from "./components/Items/ItemListPosition";
 import BottomMenu from "./components/BottomMenu/BottomMenu";
+import ItemList from "./components/Items/ItemList";
 
 function App() {
     return (
         <div>
-            {ITEMS_DATA.map( (item) => <ItemListPosition {...item} /> ) }
+            <ItemList />
             <BottomMenu />
         </div>
     );
