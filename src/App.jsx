@@ -1,5 +1,5 @@
 import { ITEMS_DATA } from "./data/items";
-import ItemListPosition from "./components/ItemListPosition";
+import ItemListPosition from "./components/Items/ItemListPosition";
 import BottomMenu from "./components/BottomMenu/BottomMenu";
 
 function App() {
